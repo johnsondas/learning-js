@@ -1,0 +1,16 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <label>Type your name:</label>
+        <input id="blur" onblur="change()" type="text">
+
+        <script>
+            function change(){
+                var x = document.getElementById("blur");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>
