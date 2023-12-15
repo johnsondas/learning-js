@@ -1,0 +1,19 @@
+<input id="one"> <br> <br>
+<input id="two"> <br> <br>
+<button onclick="change()">submit</button>
+<p id="three">result</p>
+
+<script>
+    var a = document.getElementById("one")
+    var b = document.getElementById("two")
+    var c = document.getElementById("three")
+
+   
+    function change(){
+        var box1 = Number(a.value)
+        var box2 = Number(b.value)
+
+        var total = box1 + box2
+        c.textContent=total
+    }
+</script> 
