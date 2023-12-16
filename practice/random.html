@@ -7,18 +7,24 @@
         <input id="one"> <br><br>
         <button onclick="check()">Check</button>
         <p id="two">You are wrong/right</p>
+        <p id="three">score:10</p>
 
         <script>
             var num = document.getElementById("one")
             var res = document.getElementById("two")
             var randomnum = Math.floor(Math.random()*10)
+            var sco = document.getElementById("three")
+            var score = 10
             function check(){
                var number = num.value
                if(randomnum==num.value){
                 console.log("right")
                 res.textContent = " You are Right"
+                alert("You Won")
                }
                else{
+                score = score-1
+                sco.textContent = "score:" + score
                 res.textContent = "You are Wrong"
                }
 
