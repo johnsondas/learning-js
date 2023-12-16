@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Guess the correct random number</h1>
+        <input id="one"> <br><br>
+        <button onclick="check()">Check</button>
+        <p id="two">You are wrong/right</p>
+
+        <script>
+            var num = document.getElementById("one")
+            var res = document.getElementById("two")
+            var randomnum = Math.floor(Math.random()*10)
+            function check(){
+               var number = num.value
+               if(randomnum==num.value){
+                console.log("right")
+                res.textContent = " You are Right"
+               }
+               else{
+                res.textContent = "You are Wrong"
+               }
+
+            }
+        </script>
+    </body>
+</html>
