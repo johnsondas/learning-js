@@ -27,3 +27,9 @@ for(foods of food){
 //forEach loop
 food.forEach((foods) => console.log("forEach - " + foods.title))
 // document.getElementById("one").innerHTML = food[1].dish
+
+//forEach loop
+function change(){
+food.forEach((foods) => document.getElementById("one").innerHTML += `<li>` + foods.dish
+)
+}
