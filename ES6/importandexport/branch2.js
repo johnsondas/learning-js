@@ -1,4 +1,4 @@
-//import {id,age} from './branch1'
-const {id,age} = require('./branch1')
-console.log(id)
-console.log(age) 
+import {tax, discount} from './branch1.js'
+//const {tax, discount} = require('./central.js')
+console.log(tax)
+console.log(discount)

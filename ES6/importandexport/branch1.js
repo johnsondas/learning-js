@@ -1,4 +1,5 @@
-let id = 101
-let age = 25
+let  tax=18
+let discount=5
 
-module.exports={id,age}
+//export {tax,discount}
+module.exports={tax,discount}
