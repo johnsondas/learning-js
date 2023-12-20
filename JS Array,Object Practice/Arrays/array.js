@@ -33,3 +33,9 @@ function change(){
 food.forEach((foods) => document.getElementById("one").innerHTML += `<li>` + foods.dish
 )
 }
+// function change(){
+// setTimeout(()=>{
+//         food.forEach((foods) => document.getElementById("one").innerHTML += `<li>` + foods.dish
+//         )
+// },3000)
+// }
